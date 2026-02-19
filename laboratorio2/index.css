@@ -1,85 +1,109 @@
-body{padding: 10px;
+/* este estilo se aplica al cuerpo */
+body {
+    padding: 10px;
     color: #693ADC;
 }
-main{ 
+
+/* este estilo se aplica a la parte principal de body */
+main {
     display: grid;
     gap: 15px;
-  }
-#main_Head{
+}
+
+/* estilo aplicado al encabezado principal del main */
+#main_Head {
     background-color: #FFFF;
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: center;
     align-items: center;
 }
-#main_conteiner{
+
+/* estilo aplicado a la parte principal del main */
+#main_conteiner {
     display: grid;
     grid-template-columns: 33% 33% 32%;
     gap: 1%;
-    
+
 }
-.letter{
+
+/* estilo aplicado a cada carta de medico */
+.letter {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    }
-.container-img-button{
+}
+
+/* estilo aplicado al contenedor de imagen y botón */
+.container-img-button {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
-#description-container{
+
+/* estilo aplicado al contenedor de descripción */
+#description-container {
     border-radius: 10px;
     text-align: center;
-}
-.clinical-logo{
-    max-height: 100px;
-    max-width: 100px;
-}
-.medical-logo{
-    max-height: 50px;
-    max-width: 50px;
-}
-#letter1, #letter6{
-    border:2px solid #C71556;
-    padding: 15px;
-    background-color: #CA5F86;
-    background: radial-gradient(circle,rgba(148, 187, 233, 1) 0%, rgb(219, 108, 156) 100%);
-    text-align: right;
-}
-#letter2, #letter5{
-    border:2px solid #6B9921;
-    padding: 15px;
-    background-color:#CBE79C;
-    background: radial-gradient(circle,rgba(148, 187, 233, 1) 0%, rgba(203, 231, 156, 1) 100%);
-    text-align: center;
-}
-#letter3, #letter4{
-    border:2px solid #7B95C8;
-    padding: 15px;
-    background-color:#A2B9E6;
-    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-    text-align: left;
-}
-
-
-
-#description-container{
     background-color: #F8E9DB;
     padding: 10px;
 }
-h1{
+
+/* estilos para logos */
+.clinical-logo {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.medical-logo {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+/* estilos aplicados para cada carta de medico */
+#letter1,
+#letter6 {
+    border: 2px solid #C71556;
+    padding: 15px;
+    background-color: #CA5F86;
+    background: radial-gradient(circle, rgba(148, 187, 233, 1) 0%, rgb(219, 108, 156) 100%);
+    text-align: right;
+}
+
+#letter2,
+#letter5 {
+    border: 2px solid #6B9921;
+    padding: 15px;
+    background-color: #CBE79C;
+    background: radial-gradient(circle, rgba(148, 187, 233, 1) 0%, rgba(203, 231, 156, 1) 100%);
+    text-align: center;
+}
+
+#letter3,
+#letter4 {
+    border: 2px solid #7B95C8;
+    padding: 15px;
+    background-color: #A2B9E6;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    text-align: left;
+}
+
+/* estilos generales para encabezados */
+h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
-h2{
+
+h2 {
     font-size: 20px;
-    color:#433A8C;
+    color: #433A8C;
 }
-p{
+/* estilo para párrafos */
+p {
     font-size: 14px;
 }
-button{
+/* estilo para botones */
+button {
     background-color: #007BFF;
     border: none;
     border-radius: 5px;
