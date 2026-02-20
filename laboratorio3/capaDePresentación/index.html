@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamiento de citas médicas</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <h2>Registrar Medico</h2>
+  <form id="formMedico">
+    <input type="text" id="nombresMedico" placeholder="Nombres" required>
+    <input type="text" id="apellidosMedico" placeholder="Apellidos" required>
+    <button type="submit">Agregar Medico</button>
+  </form>
+
+  <h2>Registrar Paciente</h2> 
+  <form id="formPaciente">
+    <input type="text" id="nombresPaciente" placeholder="Nombres" required>
+    <input type="text" id="apellidosPaciente" placeholder="Apellidos" required>
+    <button type="submit">Agregar Paciente</button>
+  </form>
+
+  <h2>Registrar citas medicas</h2>
+  <form id="formCitas">
+    
+    <input type="date" id="fecha" required>
+    <input type="time" id="horaInicio" required>
+    <input type="time" id="horaFin" required>
+    
+    <select id="medicoSelect" required></select>
+    <select id="pacienteSelect" required></select>
+    <button type="submit">Agregar Cita</button>
+  </form>
+
+  <h2>Citas Registradas</h2>
+  <table border="1">
+    <thead>
+      <tr>        
+        <th>Fecha</th>
+        <th>Hora Inicio</th>
+        <th>Hora Fin</th>        
+        <th>Medico</th>
+        <th>Paciente</th>
+      </tr>
+    </thead>
+    <tbody id="tablaCitas"></tbody>
+  </table>
+
+  <!-- Archivos JS -->
+  <!-- 1. Entidades -->
+  <script src="../capaDeAccesoADatos/entitys/Medico.js"></script>
+  <script src="../capaDeAccesoADatos/entitys/Paciente.js"></script>
+  <script src="../capaDeAccesoADatos/entitys/Cita.js"></script>
+
+  <!-- 2. Repositorios -->
+  <script src="../capaDeAccesoADatos/repositorios/MedicoRepository.js"></script>
+  <script src="../capaDeAccesoADatos/repositorios/PacienteRepository.js"></script>
+  <script src="../capaDeAccesoADatos/repositorios/CitaRepository.js"></script>
+
+  <!-- 3. Fachadas -->
+  <script src="../fachadaServices/gestionarMedicosServices.js"></script>
+  <script src="../fachadaServices/gestionarPacientesServices.js"></script>
+  <script src="../fachadaServices/gestionarCitasServices.js"></script>
+ 
+  <!-- 4. Vista (estos sí están en la misma carpeta que index.html) -->
+  <script src="logicaCita.js"></script>   
+  <script src="logicaMedico.js"></script>
+  <script src="logicaPaciente.js"></script> 
+
+
+</body>
+</html>
