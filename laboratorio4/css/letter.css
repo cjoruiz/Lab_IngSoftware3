@@ -1,37 +1,10 @@
-/* este estilo se aplica al cuerpo */
-body {
-    padding: 10px;
-    color: #693ADC;
-}
-
-/* este estilo se aplica a la parte principal de body */
-main {
-    display: grid;
-    gap: 15px;
-}
-
-/* estilo aplicado al encabezado principal del main */
-#main_Head {
-    background-color: #FFFF;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-items: center;
-    align-items: center;
-}
-
-/* estilo aplicado a la parte principal del main */
-#main_conteiner {
-    display: grid;
-    grid-template-columns: 33% 33% 32%;
-    gap: 1%;
-
-}
 
 /* estilo aplicado a cada carta de medico */
 .letter {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    height: 100%;
 }
 
 /* estilo aplicado al contenedor de imagen y botón */
@@ -40,6 +13,9 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-top: auto;
+    justify-content: space-between; 
+    align-items: center;
 }
 
 /* estilo aplicado al contenedor de descripción */
@@ -62,17 +38,16 @@ main {
 }
 
 /* estilos aplicados para cada carta de medico */
-#letter1,
-#letter6 {
+.letter1 {
     border: 2px solid #C71556;
     padding: 15px;
     background-color: #CA5F86;
     background: radial-gradient(circle, rgba(148, 187, 233, 1) 0%, rgb(219, 108, 156) 100%);
     text-align: right;
+    color: #FFFFFF;
 }
 
-#letter2,
-#letter5 {
+.letter2 {
     border: 2px solid #6B9921;
     padding: 15px;
     background-color: #CBE79C;
@@ -80,14 +55,6 @@ main {
     text-align: center;
 }
 
-#letter3,
-#letter4 {
-    border: 2px solid #7B95C8;
-    padding: 15px;
-    background-color: #A2B9E6;
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-    text-align: left;
-}
 
 /* estilos generales para encabezados */
 h1 {
