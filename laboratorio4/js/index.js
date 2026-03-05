@@ -82,35 +82,3 @@ function renderDoctors() {
 
 renderDoctors();
 
-const listaEspecialidades = document.getElementById("listaEspecialidades");
-const descripcion = document.querySelector(".descripcion-categoria");
-
-listaEspecialidades.addEventListener("click", (e) => {
-
-  if (e.target.classList.contains("list-group-item")) {
-
-    const texto = e.target.textContent.trim();
-
-    if (texto === "Terapia neural") {
-      descripcion.textContent =
-        "La terapia neural regula el sistema nervioso mediante anestésicos locales.";
-    }
-
-    else if (texto === "Quiropraxia") {
-      descripcion.textContent =
-        "La quiropraxia trata problemas musculoesqueléticos, especialmente la columna.";
-    }
-
-    else if (texto === "Fisioterapia") {
-      descripcion.textContent =
-        "La fisioterapia ayuda a recuperar movilidad y función física.";
-    }
-
-    else if (texto === "Nutrición y Dietética Terapéutica") {
-      descripcion.textContent =
-        "La nutrición terapéutica diseña planes alimenticios personalizados.";
-    }
-
-  }
-
-});

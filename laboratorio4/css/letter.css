@@ -60,10 +60,13 @@
 h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
-
-h2 {
+h2{
+    color:#6da1d9;
+    font-weight: bolder;
+}
+h3 {
     font-size: 20px;
-    color: #433A8C;
+    font-weight: 600;
 }
 /* estilo para párrafos */
 p {
