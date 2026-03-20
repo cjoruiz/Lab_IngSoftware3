@@ -1,0 +1,10 @@
+#landingPage-container {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+#medicos{
+  background-color: var(--secondary-color);
+}
+#registro{
+  background-color: var(--primary-color);
+}

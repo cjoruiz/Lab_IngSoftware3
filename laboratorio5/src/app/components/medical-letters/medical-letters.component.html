@@ -1,0 +1,24 @@
+<section >
+  <h3>Nuestros especialistas</h3>
+
+  <div class="row g-3">
+    @for (doctor of doctors; track doctor.name) {
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex ">
+        <div  class="p-3 letter h-100 w-100 custom-shadow bg-opacity-50 rounded">
+          <h5>{{ doctor.name }}</h5>
+          <p>{{ doctor.experience }}</p>
+          <p><strong>Especialidad:</strong> {{ doctor.specialty }}</p>
+          <p>{{ doctor.description }}</p>
+          <p><strong>Horario:</strong> {{ doctor.schedule }}</p>
+
+          <div class="container-img-button">
+            <img [src]="doctor.img" [alt]="doctor.name" class="medical-logo">
+            <button class="btn btn-light btn-sm" (click)="agendarCita(doctor)">
+              Agendar cita
+            </button>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</section>

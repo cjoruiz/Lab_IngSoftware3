@@ -1,0 +1,21 @@
+$kind: http-request
+url: localhost:5000/api/clientes/2
+method: PUT
+body:
+  type: json
+  content: "{    \r
+
+    \    \"id\": 2,\r
+
+    \    \"nombre\": \"nombre actualizado\",\r
+
+    \    \"apellido\": \"apellido actualizado\",\r
+
+    \    \"email\": \"correoactualizado@unicauca.edu.co\",\r
+
+    \    \"createAt\": \"2025-10-01T21:46:47.630+00:00\"\r
+
+    }"
+auth:
+  type: noauth
+order: 4000

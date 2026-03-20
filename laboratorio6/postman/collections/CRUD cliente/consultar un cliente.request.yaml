@@ -1,0 +1,6 @@
+$kind: http-request
+url: localhost:5000/api/clientes/2
+method: GET
+auth:
+  type: noauth
+order: 3000

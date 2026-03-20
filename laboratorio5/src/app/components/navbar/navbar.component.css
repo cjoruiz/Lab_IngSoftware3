@@ -1,0 +1,9 @@
+nav{
+  background-color: var(--quaternary-color);
+  border-bottom: 1px solid var(--quinary-color);
+}
+
+nav li{
+  font-size:large;
+  font-weight: 500;
+}

@@ -1,0 +1,21 @@
+<aside >
+  <h3>Categorías</h3>
+
+  <ul class="list-group text-wrap" id="listaEspecialidades">
+    <li class="list-group-item text-wrap" *ngFor="let especialidad of listaEspecialidades">
+      <!-- 🔹 Usamos (click) en lugar de addEventListener -->
+      <a
+        href="javascript:void(0)"
+        (click)="onSeleccionar(especialidad)"
+        [class.text-primary]="descripcionSeleccionada === especialidades[especialidad]"
+      >
+        {{ especialidad }}
+      </a>
+    </li>
+  </ul>
+
+  <!-- 🔹 Interpolación para mostrar la descripción -->
+  <p class="descripcion-categoria text-light p-4">
+    {{ descripcionSeleccionada }}
+  </p>
+</aside>

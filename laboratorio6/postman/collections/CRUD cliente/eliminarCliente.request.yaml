@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:5000/api/clientes/3
+method: DELETE
+body:
+  type: text
+  content: "{    \r
+
+    \    \"nombre\": \"nuevo cliente\",\r
+
+    \    \"apellido\": \"nuevo apellido\",\r
+
+    \    \"email\": \"nuevoCorreo@unicauca.edu.co\"\r
+
+    }"
+auth:
+  type: noauth
+order: 5000

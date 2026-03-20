@@ -1,0 +1,74 @@
+
+/* estilo aplicado a cada carta de medico */
+.letter {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 100%;
+}
+
+/* estilo aplicado al contenedor de imagen y botón */
+.container-img-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* estilo aplicado al contenedor de descripción */
+#description-container {
+    border-radius: 10px;
+    text-align: center;
+    background-color: #F8E9DB;
+    padding: 10px;
+}
+
+/* estilos para logos */
+.clinical-logo {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.medical-logo {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+/* estilos aplicados para cada carta de medico */
+.letter1 {
+    border: 2px solid #C71556;
+    padding: 15px;
+   /*  background-color: #CA5F86;
+    background: radial-gradient(circle, rgba(148, 187, 233, 1) 0%, rgb(219, 108, 156) 100%); */
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.letter2 {
+    border: 2px solid #6B9921;
+    padding: 15px;
+    background-color: #CBE79C;
+    background: radial-gradient(circle, rgba(148, 187, 233, 1) 0%, rgba(203, 231, 156, 1) 100%);
+    text-align: center;
+}
+
+
+
+/* estilo para párrafos */
+p {
+    font-size: 14px;
+}
+/* estilo para botones */
+button {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: #FFFF;
+    padding: 10px 14px;
+}
+.custom-shadow {
+    box-shadow: -0.1rem 0rem .3rem var(--quinary-color) !important;
+}

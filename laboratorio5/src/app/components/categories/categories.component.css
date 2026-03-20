@@ -1,0 +1,11 @@
+#listaEspecialidades li a{
+  color: var(--primary-color);
+}
+#listaEspecialidades {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius:0%;
+}
+.descripcion-categoria{
+  background-color: var(--primary-color);
+  border-radius: 0 0 10px 10px ;
+}
