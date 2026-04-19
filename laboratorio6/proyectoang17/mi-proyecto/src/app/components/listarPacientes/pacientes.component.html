@@ -1,0 +1,41 @@
+<div class="my-2 text-left">
+  <button class="btn btn-rounded btn-primary" type="button" [routerLink]="['/paciente/crearPacientes']">  Crear Paciente
+  </button>
+  </div>
+  
+<div class="card text-white bg-primary mb-3">
+    <div class="card-header">Pacientes</div>
+    <div class="card-body">
+      <h5 class="card-title">Listado de pacientes</h5>
+      <div *ngIf="pacientes?.length==0"	class="alert alert-info">
+        No hay registros en la base de datos
+      </div>
+          
+      <table class="table table-bordered table-striped" *ngIf="pacientes.length>0"> 
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Email</th>
+                <th>Fecha de creación</th>
+                <th>Opciones</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let paciente of pacientes">
+                <td>{{paciente.id}}</td>
+                <td>{{paciente.nombre}}</td>
+                <td>{{paciente.apellido}}</td>
+                <td>{{paciente.email}}</td>
+                <td>{{paciente.createAt}}</td>
+                <td>  
+                  <button  (click)="editarPaciente(paciente.id)" class="btn btn-warning">Editar  </button>                       
+                  <button (click)="eliminarPaciente(paciente.id)" class="btn btn-danger">Eliminar</button>
+                </td>
+            </tr> 
+        </tbody>
+      </table>
+    </div>
+  </div>

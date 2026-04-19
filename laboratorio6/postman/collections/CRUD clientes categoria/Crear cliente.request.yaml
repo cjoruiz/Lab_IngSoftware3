@@ -1,0 +1,23 @@
+$kind: http-request
+url: localhost:5000/api/clientes
+method: POST
+body:
+  type: json
+  content: "{        \r
+
+    \        \"nombre\": \"Neymar\",\r
+
+    \        \"apellido\": \"Junior\",\r
+
+    \        \"email\": \"neymar@unicauca.edu.co\",        \r
+
+    \        \"estado\": false,\r
+
+    \        \"objCategoria\": {\r
+
+    \            \"id\": 3            \r
+
+    \        }\r
+
+    \    }"
+order: 2000

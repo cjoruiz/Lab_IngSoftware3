@@ -1,0 +1,16 @@
+#landingPage-container {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#landingPage-container .container-fluid {
+  flex: 1;
+}
+
+#landingPage-container router-outlet {
+  display: block;
+  min-height: 400px;
+}

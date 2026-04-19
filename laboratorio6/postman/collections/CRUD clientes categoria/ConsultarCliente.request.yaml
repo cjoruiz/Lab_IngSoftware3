@@ -1,0 +1,4 @@
+$kind: http-request
+url: localhost:5000/api/clientes/5
+method: GET
+order: 3000
